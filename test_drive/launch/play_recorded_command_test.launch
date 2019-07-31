@@ -1,0 +1,14 @@
+<launch>
+
+	<arg name="steer_motor_port"   value="/dev/ttyUSB1" />
+	
+    
+   	<param name="steer_motor_port" value="$(arg steer_motor_port)" />
+	<node pkg="ultimate_seniorcar" type="steer_motor_controller_connecter_div.py" name="steer_motor" output="screen"/>
+
+	
+
+
+
+
+</launch>
